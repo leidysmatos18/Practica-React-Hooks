@@ -10,7 +10,10 @@ import React, { useState } from "react";
 import LifeCycle from "./UseEffect/LifeCycle";
 import FetchCart from "./UseEffect/FetchCart";
 import ResizeApp from "./UseEffect/ResizeApp";
-
+import MiniCodeInput from "./UseState/MiniCodeInput";
+import AppdelanteCounter from "./UseEffect/AppdelanteCounter";
+import AppdelanteShowColor from "./UseEffect/AppdelanteShowColor";
+import ShowColorPractica from "./UseEffect/ShowColorPractica";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -26,17 +29,28 @@ function App() {
       <ShoppingCart/>
       <ShoppingCart2/> */}
 
+      {/* COMPONENTES DE UseState otro curso */}
+      {/* <MiniCodeInput/> */}
+     
+
       {/* COMPONENTES DE UseEffec */}
 
       {/* este boton es de la app resize */}
-      <button onClick={() => setShow(!show)}>
+      {/* <button onClick={() => setShow(!show)}>
         Show/Hide
-      </button>
+      </button> */}
 
-      {show && <LifeCycle/>}
+      {/* {show && <LifeCycle/>} */}
   
       {/* <FetchCart/> */}
       {/* { show && <ResizeApp/> } */}
+
+      {/* COMPONENTES DE UseEffec  otro curso*/}
+
+      {/* <AppdelanteCounter/> */}
+      {/* <AppdelanteShowColor/> */}
+
+      <ShowColorPractica/>
      
 
     </div>
